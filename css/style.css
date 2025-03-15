@@ -14,13 +14,36 @@ ul{
   padding: 20px;
   background-color: #adff2a;
   display: grid;
-  grid-template-columns: repeat(3, 5fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 2fr);
+  /* gap: 20px; */
   /* grid-template-rows: 200px 150px 100px; */
 }
 
 .grid-child{
+  grid-template-columns: repeat(3, 3fr);
   background-color: #ffd700;
   border: 2px solid black;
   text-align: center;
+}
+
+.grid-3{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.grid-9{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.grid-4{
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.grid-8{
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
